@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+
+{%block contenidos%}
+    <h3>Página de datos, flores Iris</h3>
+
+    {%for n in datos_desde_archivo %}
+    <p>{{n}}</p>   
+    <hr>
+    <p>{{n.sepal_length}}</p> 
+    <p>{{n.sepal_width}}</p>
+    <p>{{n.petal_length}}</p>
+    <p>{{n.petal_width}}</p>
+    <p>{{n.variety}}</p>
+    {%endfor%}
+
+
+{% endblock%}
